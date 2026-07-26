@@ -1,0 +1,30 @@
+name: habit_tracker
+description: A Habit Tracker App using SQLite
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Local Database
+  sqflite: ^2.4.2
+
+  # Database Path
+  path: ^1.9.1
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
