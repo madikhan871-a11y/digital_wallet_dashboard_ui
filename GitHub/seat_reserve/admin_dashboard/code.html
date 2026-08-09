@@ -1,0 +1,153 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#004395", "on-tertiary-container": "#009668", "secondary-fixed": "#d8e2ff", "secondary-fixed-dim": "#adc6ff", "outline-variant": "#c6c6cd", "on-tertiary-fixed": "#002113", "on-surface": "#0b1c30", "on-error": "#ffffff", "tertiary-fixed": "#6ffbbe", "surface-dim": "#cbdbf5", "on-secondary-fixed": "#001a42", "primary-container": "#131b2e", "on-primary-fixed-variant": "#3f465c", "tertiary-container": "#002113", "surface-container-low": "#eff4ff", "inverse-primary": "#bec6e0", "error": "#ba1a1a", "secondary-container": "#2170e4", "surface-variant": "#d3e4fe", "primary-fixed": "#dae2fd", "tertiary": "#000000", "primary-fixed-dim": "#bec6e0", "background": "#f8f9ff", "surface-container-high": "#dce9ff", "on-tertiary": "#ffffff", "on-primary-fixed": "#131b2e", "on-secondary": "#ffffff", "on-surface-variant": "#45464d", "on-error-container": "#93000a", "on-primary": "#ffffff", "surface": "#f8f9ff", "surface-tint": "#565e74", "error-container": "#ffdad6", "secondary": "#0058be", "surface-bright": "#f8f9ff", "on-secondary-container": "#fefcff", "inverse-on-surface": "#eaf1ff", "surface-container": "#e5eeff", "outline": "#76777d", "primary": "#000000", "on-tertiary-fixed-variant": "#005236", "tertiary-fixed-dim": "#4edea3", "surface-container-highest": "#d3e4fe", "on-primary-container": "#7c839b", "surface-container-lowest": "#ffffff", "on-background": "#0b1c30", "inverse-surface": "#213145" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "container-padding-desktop": "40px", "gutter": "24px", "stack-sm": "12px", "container-padding-mobile": "16px", "base": "8px", "stack-md": "24px", "stack-lg": "48px" }, "fontFamily": { "body-md": ["Hanken Grotesk"], "title-md": ["Hanken Grotesk"], "display-lg": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "label-code": ["JetBrains Mono"], "headline-lg-mobile": ["Hanken Grotesk"], "headline-lg": ["Hanken Grotesk"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base { body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom); } .pt-safe { padding-top: env(safe-area-inset-top); } } .no-scrollbar::-webkit-scrollbar { display: none; } </style></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-container-padding-mobile flex items-center justify-between"><div class="flex items-center gap-base"><img alt="Software House Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH9Y-C_ZZc3IlQn6d1ck8eVpMYtoFStL1VSE6I2M8hlaB7_HCJTepLoM1GTAIDQUqOG7rYCtKiy7iMZsLcy1rM-XbWGl0OXLsaBhmrqu_FlhkinqT-_j8Pj6eESSd_uAKV3GjmI_O-Dvkq01Zcf1hk03c05J6YC2KCrP-z3TF5kXEN7NZTnz_46HghgCBGKYFP5D4cehU10mtSjbmuc9_LEmh74LhTJ6-irS3v0AzKJrpYGhQRoa0"/><span class="font-title-md text-title-md text-on-surface">Dashboard</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full gap-stack-md px-container-padding-mobile pb-stack-lg mt-stack-sm">
+<!-- Overview Stats Grid -->
+<div class="flex flex-col gap-base">
+<!-- Occupancy Card -->
+<div class="bg-surface-container rounded-xl p-stack-sm shadow-sm flex flex-col gap-base relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl transition-transform duration-700 group-hover:scale-150"></div>
+<div class="flex justify-between items-center relative z-10">
+<span class="font-title-md text-title-md text-on-surface">Today's Occupancy</span>
+<span class="material-symbols-outlined text-on-surface-variant" style="font-variation-settings: 'FILL' 1;">group</span>
+</div>
+<div class="flex items-baseline gap-2 relative z-10">
+<span class="font-display-lg text-display-lg text-primary">18</span>
+<span class="font-label-code text-label-code text-on-surface-variant tracking-widest">/ 25 SEATS</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden mt-1 relative z-10">
+<div class="h-full bg-secondary rounded-full transition-all duration-1000 w-0" data-target="72%" id="occupancy-bar"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-code text-label-code relative z-10">
+<span>72% FULL</span>
+<span class="text-on-tertiary-container bg-tertiary-fixed-dim/20 px-2 rounded-sm">7 AVAILABLE</span>
+</div>
+</div>
+<div class="flex gap-base w-full">
+<!-- Pending Card -->
+<div class="flex-1 bg-secondary-container rounded-xl p-stack-sm shadow-sm flex flex-col gap-base text-on-secondary-container relative overflow-hidden">
+<div class="flex justify-between items-start">
+<span class="font-body-md text-body-md font-semibold">Pending<br/>Approvals</span>
+<span class="material-symbols-outlined opacity-80" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<div class="mt-auto pt-2">
+<span class="font-headline-lg-mobile text-headline-lg-mobile">12</span>
+</div>
+</div>
+<!-- Deadline Card -->
+<div class="flex-1 bg-surface-container-high rounded-xl p-stack-sm shadow-sm flex flex-col gap-base text-on-surface relative overflow-hidden">
+<div class="flex justify-between items-start">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Booking<br/>Deadline</span>
+<span class="material-symbols-outlined text-secondary">schedule</span>
+</div>
+<div class="mt-auto pt-2 flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface" id="countdown-display">--:--:--</span>
+<span class="font-label-code text-label-code text-on-surface-variant">10:00 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="flex gap-base w-full pt-2">
+<button class="flex-1 bg-secondary text-on-secondary rounded-full py-3 px-base flex items-center justify-center gap-2 shadow-md active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+<span class="font-body-md text-body-md font-medium">Deadline</span>
+</button>
+<button class="flex-1 bg-surface-variant text-on-surface-variant rounded-full py-3 px-base flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">chair_alt</span>
+<span class="font-body-md text-body-md font-medium">Total Seats</span>
+</button>
+</div>
+<!-- Analytics Chart -->
+<div class="bg-surface-container rounded-xl p-stack-sm shadow-sm flex flex-col mt-stack-sm">
+<div class="flex justify-between items-center mb-4">
+<span class="font-title-md text-title-md text-on-surface">5-Day Trend</span>
+<span class="font-label-code text-label-code text-on-surface-variant">UTILIZATION</span>
+</div>
+<div class="relative w-full h-32 flex items-end justify-between gap-2 pb-6 pt-2">
+<!-- Grid lines -->
+<div class="absolute inset-0 flex flex-col justify-between pb-6 opacity-30 pointer-events-none">
+<div class="w-full h-[1px] bg-outline-variant"></div>
+<div class="w-full h-[1px] bg-outline-variant"></div>
+<div class="w-full h-[1px] bg-outline-variant"></div>
+</div>
+<!-- Bars -->
+<div class="flex-1 flex flex-col justify-end items-center h-full relative group">
+<div class="w-full max-w-[32px] bg-surface-variant rounded-t-sm relative h-full overflow-hidden">
+<div class="absolute bottom-0 w-full bg-secondary-fixed-dim rounded-t-sm transition-all duration-1000 h-0 chart-bar" data-height="40%"></div>
+</div>
+<span class="absolute -bottom-6 font-label-code text-label-code text-on-surface-variant">MON</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center h-full relative group">
+<div class="w-full max-w-[32px] bg-surface-variant rounded-t-sm relative h-full overflow-hidden">
+<div class="absolute bottom-0 w-full bg-secondary-fixed-dim rounded-t-sm transition-all duration-1000 h-0 chart-bar" data-height="65%"></div>
+</div>
+<span class="absolute -bottom-6 font-label-code text-label-code text-on-surface-variant">TUE</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center h-full relative group">
+<div class="w-full max-w-[32px] bg-surface-variant rounded-t-sm relative h-full overflow-hidden">
+<div class="absolute bottom-0 w-full bg-secondary-fixed-dim rounded-t-sm transition-all duration-1000 h-0 chart-bar" data-height="85%"></div>
+</div>
+<span class="absolute -bottom-6 font-label-code text-label-code text-on-surface-variant">WED</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center h-full relative group">
+<div class="w-full max-w-[32px] bg-surface-variant rounded-t-sm relative h-full overflow-hidden">
+<div class="absolute bottom-0 w-full bg-secondary rounded-t-sm transition-all duration-1000 h-0 chart-bar shadow-[0_0_8px_rgba(0,88,190,0.4)]" data-height="95%"></div>
+</div>
+<span class="absolute -bottom-6 font-label-code text-label-code text-on-surface font-bold">THU</span>
+</div>
+<div class="flex-1 flex flex-col justify-end items-center h-full relative group">
+<div class="w-full max-w-[32px] bg-surface-variant rounded-t-sm relative h-full overflow-hidden">
+<div class="absolute bottom-0 w-full bg-secondary-fixed-dim rounded-t-sm transition-all duration-1000 h-0 chart-bar" data-height="50%"></div>
+</div>
+<span class="absolute -bottom-6 font-label-code text-label-code text-on-surface-variant">FRI</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Animate Occupancy Bar
+        setTimeout(() => {
+            const bar = document.getElementById('occupancy-bar');
+            if (bar) bar.style.width = bar.getAttribute('data-target');
+        }, 300);
+
+        // Animate Chart Bars
+        setTimeout(() => {
+            const bars = document.querySelectorAll('.chart-bar');
+            bars.forEach((bar, index) => {
+                setTimeout(() => {
+                    bar.style.height = bar.getAttribute('data-height');
+                }, index * 100);
+            });
+        }, 500);
+
+        // Fake Countdown Timer logic (counting down to 10:00 AM next day for demo purposes)
+        const display = document.getElementById('countdown-display');
+        
+        function updateTimer() {
+            const now = new Date();
+            let target = new Date();
+            target.setHours(10, 0, 0, 0);
+            
+            if (now > target) {
+                target.setDate(target.getDate() + 1); // Set for tomorrow if 10 AM passed
+            }
+            
+            const diff = target - now;
+            
+            if (diff <= 0) {
+                display.textContent = "00:00:00";
+                return;
+            }
+            
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            display.textContent = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+        
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    });
+</script></main><nav class="fixed bottom-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)] pb-safe" data-active-classes="text-secondary font-bold"><div class="flex justify-between items-center h-16 px-base"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] text-secondary font-bold" data-path="dashboard" href="#"><span class="material-symbols-outlined">dashboard</span><span class="font-body-sm text-body-sm">Admin</span></a><a class="flex-1 flex flex-col items-center justify-center text-on-surface-variant min-h-[44px]" data-path="approvals" href="#"><span class="material-symbols-outlined">check_circle</span><span class="font-body-sm text-body-sm">Approvals</span></a><a class="flex-1 flex flex-col items-center justify-center text-on-surface-variant min-h-[44px]" data-path="student-home" href="#"><span class="material-symbols-outlined">event_seat</span><span class="font-body-sm text-body-sm">Book</span></a><a class="flex-1 flex flex-col items-center justify-center text-on-surface-variant min-h-[44px]" data-path="my-reservations" href="#"><span class="material-symbols-outlined">bookmark</span><span class="font-body-sm text-body-sm">My Seats</span></a><a class="flex-1 flex flex-col items-center justify-center text-on-surface-variant min-h-[44px]" data-path="settings" href="#"><span class="material-symbols-outlined">settings</span><span class="font-body-sm text-body-sm">Set</span></a></div></nav></body></html>
